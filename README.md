@@ -49,6 +49,7 @@ $$\theta = \sigma \cdot \mathrm{atan2}(C_X, C_Y)\cdot\frac{180}{\pi} + Z_0$$
 
 com $C_i = (A_{saida,i} - A_{offset,i})/\text{Ganho}_i$, $\sigma = -1$ (sentido horário) e $Z_0 = -90{,}0^\circ$.
 
-## Autor
+## Autorers
 
-Pedro, UnB/FGA
+Gabriela, UnB/FCTE
+Pedro, UnB/FCTE
