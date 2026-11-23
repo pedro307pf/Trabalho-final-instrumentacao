@@ -1,5 +1,4 @@
-
-# Medição de ângulo de inclinação com MPU-6050
+# Medição de ângulo de inclinação com MPU-6050 e ESP32-C3 Mini
 
 Trabalho prático de Instrumentação Eletrônica para Engenharia (UnB/FGA, 02/2026), Entrega 2:
 calibração estática do acelerômetro e medição do ângulo de inclinação.
@@ -42,14 +41,4 @@ $$\text{Ganho}_i = \frac{\bar A_{+1g,i} - \bar A_{-1g,i}}{2} \qquad A_{offset,i}
 
 1. Copie os valores de ganho e offset para as constantes no início de `angulo/angulo.ino`.
 2. Fixe o sensor no braço com o eixo Z paralelo ao eixo de rotação.
-3. Grave `angulo/angulo.ino` e abra o monitor serial. A saída é o ângulo em graus.
-
-O ângulo é calculado por:
-
-$$\theta = \sigma \cdot \operatorname{atan2}(C_X, C_Y)\cdot\frac{180}{\pi} + Z_0$$
-
-com $C_i = (A_{saida,i} - A_{offset,i})/\text{Ganho}_i$, $\sigma = -1$ (sentido horário) e $Z_0 = -92{,}1^\circ$.
-
-## Autor
-
-Pedro, UnB/FGA
+3. Grave `angulo/angulo.ino` e abra o monitor serial. A saída é o ângulo em
